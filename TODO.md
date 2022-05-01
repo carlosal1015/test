@@ -1,6 +1,6 @@
-[](https://www.dealii.org/developer/developers/testsuite.html)
-[](https://aur.archlinux.org/packages/numdiff)
-[](https://wiki.archlinux.org/title/CMake_package_guidelines#Tips_and_tricks)
+- [](https://www.dealii.org/developer/developers/testsuite.html)
+- [](https://aur.archlinux.org/packages/numdiff)
+- [](https://wiki.archlinux.org/title/CMake_package_guidelines#Tips_and_tricks)
 
 ```
 step-17 - dependencies not satisfied
