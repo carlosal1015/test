@@ -1,0 +1,4 @@
+[submodule "dealii"]
+	path = dealii
+	url = https://github.com/dealii/dealii
+	shallow = true
