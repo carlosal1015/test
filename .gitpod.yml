@@ -3,7 +3,6 @@ image: ghcr.io/carlosal1015/aur/deal-ii:latest
 tasks:
   - name: Install git
     command: |
-      sudo pacman  --noconfirm
       sudo pacman -Syyu git --needed --noconfirm
       git submodule update --init --remote --recursive --merge
 
