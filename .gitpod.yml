@@ -1,10 +1,15 @@
 image: ghcr.io/carlosal1015/aur/deal-ii:latest
 
 tasks:
-  - name: Install git
+  - name: Install cmake, git & numdiff
     command: |
-      sudo pacman -Syyu git --needed --noconfirm
+      sudo pacman -Syyu cmake git --needed --noconfirm
       git submodule update --init --remote --recursive --merge
+      pushd numdiff
+      makepkg -sic --noconfirm
+      popd
+      cmake -S dealii -B build -Wno-dev
+      cmake --build build --target setup_tests
 
 github:
   prebuilds:

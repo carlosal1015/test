@@ -2,3 +2,7 @@
 	path = dealii
 	url = https://github.com/dealii/dealii
 	shallow = true
+[submodule "numdiff"]
+	path = numdiff
+	url = https://aur.archlinux.org/numdiff.git
+	shallow = true
