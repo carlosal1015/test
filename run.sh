@@ -21,15 +21,12 @@ function test() {
 }
 
 function examples() {
-  cmake \
-    -S dealii/examples \
-    -B examples_for_installed_dealii \
-    -DDEAL_II_DIR=/usr \
-    -Wno-dev
-
-  cmake \
-    --build examples_for_installed_dealii \
-    --target examples
+  for step in step-*; do
+    pushd step
+    cmake -B build -Wno-dev
+    cmake --build build --target run
+    popd
+  done
 }
 
 # https://stackoverflow.com/a/16496491/9302545
