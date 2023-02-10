@@ -29,3 +29,7 @@ github:
     addBadge: false
     # add a label once the prebuild is ready to pull requests (defaults to false)
     addLabel: prebuilt-in-gitpod
+
+vscode:
+  extensions:
+    - sndst00m.vscode-native-svg-preview
