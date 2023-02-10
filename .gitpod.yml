@@ -1,9 +1,12 @@
 image: ghcr.io/carlosal1015/aur/deal-ii:latest
 
 tasks:
-  - name: Install cmake, git, numdiff & valgrind
+  - name: Install cmake, numdiff & valgrind
+    env:
+      PACKAGES: "cmake valgrind"
     command: |
-      sudo pacman -Syyu cmake git valgrind --needed --noconfirm
+      sudo pacman --needed --noconfirm --noprogressbar -Syyuq
+      sudo pacman --needed --noconfirm --noprogressbar -S ${PACKAGES}
       git submodule update --init --remote --recursive --merge
       pushd numdiff
       makepkg -sic --noconfirm

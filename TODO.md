@@ -1,3 +1,12 @@
+- [](https://stackoverflow.com/a/37593674)
+- [](https://stackoverflow.com/a/29270131)
+
+```
+$ git remote set-branches --add origin 'tags/v9.4.2'
+$ git fetch --depth 1 origin tags/v9.4.2
+$ git checkout tags/v9.4.2
+```
+
 - [](https://www.dealii.org/developer/developers/testsuite.html)
 - [](https://aur.archlinux.org/packages/numdiff)
 - [](https://wiki.archlinux.org/title/CMake_package_guidelines#Tips_and_tricks)
