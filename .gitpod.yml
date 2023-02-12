@@ -7,7 +7,7 @@ tasks:
     command: |
       sudo pacman --needed --noconfirm --noprogressbar -Syyuq
       sudo pacman --needed --noconfirm --noprogressbar -S ${PACKAGES}
-      git submodule update --init --remote --recursive --merge
+      #git submodule update --init --remote --recursive --merge
       pushd numdiff
       makepkg -sic --noconfirm
       find . -name '*.tar.*' -exec rm {} \;
